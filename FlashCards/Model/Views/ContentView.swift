@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
-    var currentCard: Card = listOfCards.randomElement()!
+    @State var currentCard: Card = listOfCards.randomElement()!
     
     // MARK: Computed properties
     var body: some View {
@@ -26,33 +26,33 @@ struct ContentView: View {
             }, label: {
                 Text("Check")
             })
-            .buttonStyle(.bordered)
-
+                .buttonStyle(.bordered)
+            
             //Output
             Text(currentCard.answer)
                 .font(.title)
             
             //Input
             Button(action: {
-                print("Button was pressed")
+                currentCard = listOfCards.randomElement()!
+                // print("Button was pressed")
             }, label: {
                 Text("Check")
             })
-            .buttonStyle(.bordered)
+                .buttonStyle(.bordered)
             
             Spacer()
             
         }
         .navigationTitle("Flash Cards")
         .padding()
-    }   
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationalView {
+        // NavigationalView {
             ContentView()
         }
-        
     }
-}
+
