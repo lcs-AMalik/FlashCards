@@ -11,6 +11,7 @@
 		908B1802275FE9FD009F8CF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B1801275FE9FD009F8CF7 /* ContentView.swift */; };
 		908B1804275FEA0F009F8CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908B1803275FEA0F009F8CF7 /* Assets.xcassets */; };
 		908B1807275FEA0F009F8CF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908B1806275FEA0F009F8CF7 /* Preview Assets.xcassets */; };
+		908B1810275FEC13009F8CF7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B180F275FEC13009F8CF7 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		908B1801275FE9FD009F8CF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		908B1803275FEA0F009F8CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908B1806275FEA0F009F8CF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		908B180F275FEC13009F8CF7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				908B17FF275FE9FD009F8CF7 /* FlashCardsApp.swift */,
-				908B1801275FE9FD009F8CF7 /* ContentView.swift */,
+				908B180D275FEBB1009F8CF7 /* Model */,
 				908B1803275FEA0F009F8CF7 /* Assets.xcassets */,
 				908B1805275FEA0F009F8CF7 /* Preview Content */,
 			);
@@ -65,6 +67,23 @@
 				908B1806275FEA0F009F8CF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		908B180D275FEBB1009F8CF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				908B180F275FEC13009F8CF7 /* Card.swift */,
+				908B180E275FEBBD009F8CF7 /* Views */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		908B180E275FEBBD009F8CF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				908B1801275FE9FD009F8CF7 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				908B1802275FE9FD009F8CF7 /* ContentView.swift in Sources */,
+				908B1810275FEC13009F8CF7 /* Card.swift in Sources */,
 				908B1800275FE9FD009F8CF7 /* FlashCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
