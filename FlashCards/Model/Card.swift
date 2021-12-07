@@ -26,7 +26,7 @@ let listOfCards = [
     
     ,
     
-    Card(question: "What is the acceleration of the gravitational pull?",
+    Card(question: "What is the earth's constant acceleration?",
          answer: "9.80 m/s squared")
     
     

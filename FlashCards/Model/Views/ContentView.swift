@@ -45,9 +45,9 @@ struct ContentView: View {
             Button(action: {
                 
                 // Hisde the answer
-                withAnimation {
+                               //withAnimation {
                     isAnswerShowing = false
-                }
+                               //}
                 
                 // Pick a new Card
                 currentCard = listOfCards.randomElement()!
