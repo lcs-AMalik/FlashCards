@@ -8,30 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored properties
+    var currentCard: Card = listOfCards.randomElement()!
+    
+    // MARK: Computed properties
     var body: some View {
         VStack(spacing: 25) {
             
-            Text("What's \"powerhouse\" of a cell?")
+            //Output
+            Text(currentCard.question)
                 .font(.largeTitle)
             
+            //Input
             Button(action: {
                 print("Button was pressed")
             }, label: {
-            Text: ("Check")
+                Text("Check")
             })
-                .buttonStyle(.bordered)
-            
-            Text("mitrochondria")
+            .buttonStyle(.bordered)
+
+            //Output
+            Text(currentCard.answer)
                 .font(.title)
+            
+            //Input
+            Button(action: {
+                print("Button was pressed")
+            }, label: {
+                Text("Check")
+            })
+            .buttonStyle(.bordered)
             
             Spacer()
             
         }
+        .navigationTitle("Flash Cards")
+        .padding()
     }   
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationalView {
+            ContentView()
+        }
+        
     }
 }
